@@ -31,7 +31,7 @@ public class Laser : MonoBehaviour
             {
                 tempreflector = hit.transform.gameObject;
                 tempreflector.GetComponent<LaserReflector>().laserDegdi = true;
-                Vector3 temp = Vector3.Reflect(laserdirection, hit.normal); // vector3.reflect yansýma için kullanýlýr yansýmanýn yerini gösteri;
+                Vector3 temp = Vector3.Reflect(laserdirection, hit.normal); // vector3.reflect yansima iÃ§in kullanilir yansimanin yerini gÃ¶sterir
                 hit.collider.GetComponent<LaserReflector>().openray(hit.point, temp);
 
                 lr.SetPosition(1, hit.point);
