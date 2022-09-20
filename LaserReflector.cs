@@ -13,24 +13,24 @@ public class LaserReflector : MonoBehaviour
     Vector3 laserdirection;
     LineRenderer lr;
 
-    public bool laserDegdi;
+    public bool laserhit;
 
     GameObject tempreflector;
 
-    bool laseopen;
+    bool laseropen;
 
     void Start()
     {
-        laseopen = false;
+        laseropen = false;
         lr = GetComponent<LineRenderer>();
     }
 
 
     void Update()
     {
-        if (laseopen)
+        if (laseropen)
         {
-            if (laserDegdi)
+            if (laserhit)
             {
                 lr.positionCount = 2;
                 lr.SetPosition(0, position);
@@ -42,8 +42,8 @@ public class LaserReflector : MonoBehaviour
                     if (hit.transform.CompareTag("reflector"))
                     {
                         tempreflector = hit.transform.gameObject;
-                        tempreflector.GetComponent<LaserReflector>().laserDegdi = true;
-                        Vector3 temp = Vector3.Reflect(laserdirection, hit.normal); // vector3.reflect yansima için kullanilir yansimanin yerini gosterir
+                        tempreflector.GetComponent<LaserReflector>().laserhit = true;
+                        Vector3 temp = Vector3.Reflect(laserdirection, hit.normal); // vector3.reflect yansima iÃ§in kullanilir yansimanin yerini gosterir
                         hit.collider.GetComponent<LaserReflector>().openray(hit.point, temp);
 
                         lr.SetPosition(1, hit.point);
@@ -60,7 +60,7 @@ public class LaserReflector : MonoBehaviour
                     lr.SetPosition(1, laserdirection * 100);
                 }
 
-                laserDegdi = false;
+                laserhit = false;
             }
             else
             {
@@ -77,13 +77,13 @@ public class LaserReflector : MonoBehaviour
 
     public void openray(Vector3 pos, Vector3 dir)
     {
-        laseopen = true;
+        laseropen = true;
         position = pos;
         laserdirection = dir;
     }
     public void closray()
     {
-        laseopen = false;
+        laseropen = false;
         tempreflector = null;
     }
 }
