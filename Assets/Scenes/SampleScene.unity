@@ -132,11 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5544472356058369607, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_Name
-      value: Glass (1)
+      value: Glass (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -272,7 +272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &778145231
 GameObject:
@@ -370,7 +370,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &778377998
 GameObject:
@@ -569,7 +569,7 @@ Transform:
   m_Children:
   - {fileID: 796973795}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &778378004
 MonoBehaviour:
@@ -708,11 +708,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5544472356058369607, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_Name
-      value: Glass (2)
+      value: Glass (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,7 +826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6863144758328625526, guid: 258903a9228f29147a6c836e7e0188e5, type: 3}
       propertyPath: m_LocalPosition.x
